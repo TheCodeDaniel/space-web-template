@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "name": "Saturn",
+    "image": "img/planets/saturn.jpg",
+    "caption": "The planet Saturn"
+  },
+
+  {
+    "id": 2,
+    "name": "Mercury",
+    "image": "img/planets/mercury.jpg",
+    "caption": "The planet Mercury"
+  },
+
+  {
+    "id": 3,
+    "name": "Earth",
+    "image": "img/planets/earth.jpg",
+    "caption": "Our Earth"
+  },
+
+  {
+    "id": 4,
+    "name": "Venus",
+    "image": "img/planets/venus.png",
+    "caption": "The planet Venus"
+  },
+
+  {
+    "id": 5,
+    "name": "Neptune",
+    "image": "img/planets/neptune.jpg",
+    "caption": "The planet Neptune"
+  },
+
+  {
+    "id": 6,
+    "name": "Jupiter",
+    "image": "img/planets/jupiter.jpg",
+    "caption": "The planet Jupiter"
+  }
+]

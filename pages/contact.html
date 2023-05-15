@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <!-- Nav bar -->
+
+  <!-- Nav tabs -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#!">Sora</a>
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-toggle="collapse"
+      data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#!planets">Site Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#!contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!about">About</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <a href="#youtube" class="text-dark">
+          Youtube <img src="icons/youtube.svg" alt="" />
+        </a>
+      </form>
+    </div>
+  </nav>
+
+  <!-- body -->
+  <body>
+    <div class="jumbotron br-0 mt-contact">
+      <center>
+        <span class="mt-5"><b>Home > Contact</b></span>
+      </center>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Send us a message</h3>
+          <br />
+          <label> Email: soracontact@gmail.com </label> <br />
+          <label> Phone number: +234 701 5668 902 </label>
+          <br />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.3740562462017!2d7.490694374713527!3d9.029600891031752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b88b9896e45%3A0xb1bbb6c1ce06354a!2sAptech%20Computer%20Education!5e0!3m2!1sen!2sng!4v1683730221906!5m2!1sen!2sng"
+            width="100%"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="col-md-6">
+          <form ng-submit="submitData()" method="post">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your Email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                placeholder="Your message"
+                cols="30"
+                rows="6"
+                class="form-control"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-outline-dark">Send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer class="bg-black mt-4 text-white pt-4 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h6><b>About Sora</b></h6>
+          <p class="footer-about">
+            Sora is here to inspire and captivate, bringing the wonders of space
+            closer to you like never before.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h6><b>Others</b></h6>
+          <ul class="footer-links">
+            <li><a href="#" class="text-white">Space news</a></li>
+            <li><a href="#" class="text-white">Resources</a></li>
+            <li><a href="#" class="text-white">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6><b> Reach out us to us </b></h6>
+          <img src="icons/instagram.svg" alt="" />
+          <img src="icons/linkedin.svg" alt="" />
+        </div>
+      </div>
+
+      <hr class="bg-light" />
+
+      <center class="text-white">&copy; {{ getCurrentYear() }}</center>
+    </div>
+  </footer>
+</html>

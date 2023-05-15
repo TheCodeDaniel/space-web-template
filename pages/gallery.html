@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <!-- Nav tabs -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#!">Sora</a>
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-toggle="collapse"
+      data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#!planets">Site Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#!gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!about">About</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <a href="#youtube" class="text-dark">
+          Youtube <img src="icons/youtube.svg" alt="" />
+        </a>
+      </form>
+    </div>
+  </nav>
+
+  <!-- body -->
+  <body>
+    <div class="container">
+      <center>
+        <div class="gallery-go">Sora gallery.</div>
+      </center>
+      <!-- Gallery -->
+      <div ng-controller="galleryController">
+        <div class="row mt-2">
+          <!-- Gallery start -->
+
+          <div class="col-lg-4 mt-2" ng-repeat="planet in planets">
+            <div class="image-container">
+              <a
+                href="{{ planet.image }}"
+                data-fancybox="gallery"
+                data-caption="{{ planet.caption }}"
+                ng-click="handleClick()"
+              >
+                <img
+                  ng-src="{{ planet.image }}"
+                  alt="{{ planet.name }}"
+                  class="w-100 mb-2 mb-md-4 shadow br-10 lb-img"
+                  lightbox-image
+                />
+                <div class="caption">{{ planet.caption }}</div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Gallert end -->
+        </div>
+      </div>
+      <center class="mt-4">Yes, the end, for now tho..</center>
+      <!-- Gallery -->
+    </div>
+  </body>
+  <footer class="bg-black mt-4 text-white pt-4 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h6><b>About Sora</b></h6>
+          <p class="footer-about">
+            Sora is here to inspire and captivate, bringing the wonders of space
+            closer to you like never before.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h6><b>Others</b></h6>
+          <ul class="footer-links">
+            <li><a href="#" class="text-white">Space news</a></li>
+            <li><a href="#" class="text-white">Resources</a></li>
+            <li><a href="#" class="text-white">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6><b> Reach out us to us </b></h6>
+          <img src="icons/instagram.svg" alt="" />
+          <img src="icons/linkedin.svg" alt="" />
+        </div>
+      </div>
+
+      <hr class="bg-light" />
+
+      <center class="text-white">&copy; {{ getCurrentYear() }}</center>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,176 @@
+@import url("bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Space mono font */
+  font-family: "Space Grotesk", sans-serif;
+  font-size: smaller;
+}
+
+.br-0 {
+  border-radius: 0px;
+}
+
+.br-10 {
+  border-radius: 10px;
+}
+
+.joke {
+  font-size: x-small;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.footer-about {
+  font-size: smaller;
+}
+
+.footer-links {
+  list-style: none; /* Remove list style */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+}
+
+.footer-links li {
+  font-size: smaller;
+}
+
+/* Scroll bar */
+
+/* For webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the thumb */
+}
+
+/* For Firefox */
+/* Please note that this method is only supported in Firefox Nightly builds (as of my knowledge cutoff in September 2021) */
+/* You may need to use a custom scrollbar library for Firefox or other browsers */
+/* This example assumes the scrollbar width is 10px */
+@-moz-document url-prefix() {
+  scrollbar {
+    width: 10px;
+  }
+
+  scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the track */
+  }
+
+  scrollbar-thumb {
+    background-color: #888; /* Set the color of the thumb */
+  }
+}
+
+/* custom margin top */
+.gallery-go {
+  margin-top: 80px;
+}
+
+#count {
+  font-size: x-small;
+}
+
+.mt-planet {
+  margin-top: 90px;
+}
+
+/* blog blocks for planet page */
+
+.blog-blocks span {
+  font-size: x-small;
+}
+.blog-blocks label {
+  font-size: x-small;
+}
+.blog-blocks p {
+  font-size: x-small;
+}
+.blog-blocks a {
+  font-size: x-small;
+}
+
+.options {
+  display: inline-block;
+  font-size: x-small;
+  background-color: rgb(234, 234, 234);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+}
+
+.form-search {
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.form-search input {
+  width: 300px;
+  border: none;
+  outline: none;
+}
+
+.post-det-mt {
+  margin-top: 100px;
+}
+
+.mt-contact {
+  margin-top: 70px;
+}
+
+.mt-about {
+  margin-top: 90px;
+}
+
+.lb-img {
+  transition: 0.3s ease-in-out;
+}
+
+.lb-img:hover {
+  filter: brightness(70%);
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-container:hover .caption {
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  /* CSS rules for small screens */
+  .hide {
+    display: none;
+  }
+
+  .red-font {
+    font-size: 40px;
+  }
+}

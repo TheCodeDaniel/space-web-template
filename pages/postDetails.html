@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <!-- Nav tabs -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#!">Sora</a>
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-toggle="collapse"
+      data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#!planets">Site Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!about">About</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <a href="#youtube" class="text-dark">
+          Youtube <img src="icons/youtube.svg" alt="" />
+        </a>
+      </form>
+    </div>
+  </nav>
+  <!-- end of nav -->
+
+  <!-- start of body -->
+  <body>
+    <div class="post-det-mt"></div>
+    <div class="container">
+      <div class="col-md-12">
+        <div>
+          <img
+            src="../icons/timer.svg"
+            alt="time svg"
+            style="position: relative; top: -3px"
+          /><label class="ml-2">{{ data.date }}</label>
+        </div>
+        <h5><b>{{ data.title }}</b></h5>
+        <img ng-src="{{ data.image }}" alt="" width="100%" class="br-10" />
+        <p class="mt-4 bg-light p-3 shadow br-10">{{ data.description }}</p>
+      </div>
+    </div>
+    <div class="bg-light mt-5">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-7 pt-4 pb-4">
+            <h5>Subscribe to latest space news</h5>
+            <form action="">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="yes-your-mail@gmail.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <button class="btn btn-outline-dark">Subscribe</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <!-- purposely empty div -->
+          </div>
+          <div class="col-md-3 hide">
+            <lottie-player
+              src="https://assets6.lottiefiles.com/datafiles/98a3d0add75fc3c86f6d6f9b148c111e/Newspaper animation.json"
+              background="transparent"
+              speed="1"
+              style="width: 250px; height: 250px"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- end of body -->
+  <footer class="bg-black text-white pt-4 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h6><b>About Sora</b></h6>
+          <p class="footer-about">
+            Sora is here to inspire and captivate, bringing the wonders of space
+            closer to you like never before.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h6><b>Others</b></h6>
+          <ul class="footer-links">
+            <li><a href="#" class="text-white">Space news</a></li>
+            <li><a href="#" class="text-white">Resources</a></li>
+            <li><a href="#" class="text-white">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6><b> Reach out us to us </b></h6>
+          <img src="icons/instagram.svg" alt="" />
+          <img src="icons/linkedin.svg" alt="" />
+        </div>
+      </div>
+
+      <hr class="bg-light" />
+
+      <center class="text-white">&copy; {{ getCurrentYear() }}</center>
+    </div>
+  </footer>
+</html>

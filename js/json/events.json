@@ -1,0 +1,46 @@
+[
+  {
+    "id": 0,
+    "title": "Did you know jupiter is bigger than earth x 1000?",
+    "slug": "space-news",
+    "description": "The size of jupiter is over 1000 times bigger than the dimensions of the earth, and the planet jupiter is small compared to the sun, so just imagine how small the earth will be compared to the sun.",
+    "image": "img/planets/jupiter.jpg",
+    "date": "13 May 2023"
+  },
+
+  {
+    "id": 1,
+    "title": "Earth and the planets in the same solar.",
+    "slug": "space-news",
+    "description": "The distance between Earth and Saturn: 1.4926 billion km. \n Between Earth and Mercury: 90.495 million km. \n Between Earth and Venus: 132.17 million km. \n Between Earth and Neptune: 4.5567 billion km. \n Between Earth and Jupiter: 877.35 million km. \n Between Earth and Uranus: 3.0894 billion km. \n Between Earth and Mars: 278.12 million km. \n Between Earth and Pluto: 5.1412 billion km \n .",
+    "image": "img/planets/solar-system.jpg",
+    "date": "13 May 2023"
+  },
+
+  {
+    "id": 2,
+    "title": "Heat of the sun.",
+    "slug": "space-news",
+    "description": "Did you know that the core heat of the sun is a whooping fifteen million (15,000,000) degrees celcius. That heat is more and abundantly enough to melt anything the humans have ever discovered, it's a quick knowledge to have on ground, but don't be scared, it not falling on earth.",
+    "image": "img/planets/sun.jpg",
+    "date": "13 May 2023"
+  },
+
+  {
+    "id": 3,
+    "title": "Space-x Rocket launch.",
+    "slug": "Technology",
+    "description": "Space-X talks about launching an upcoming event in the next few months to test the new acquired technology and to use their past experience to make it better and safer for astronauts to use.",
+    "image": "img/planets/spaceX.jpg",
+    "date": "13 May 2023"
+  },
+
+  {
+    "id": 4,
+    "title": "Latest galaxy update.",
+    "slug": "NASA",
+    "description": "Astronomers have used the James Webb Space Telescope (JWST) to spot the most distant galaxy cluster ever found, located nearly 30 billion light years away. It may sound absurd, yes that 30 billion light year distance sounds fictional, that's a testament to how far our current technology is.",
+    "image": "img/planets/galaxy.jpg",
+    "date": "13 May 2023"
+  }
+]
